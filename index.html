@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .row {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .square {
+        width: 200px;
+        height: 200px;
+        border-color: white;
+        border-style: solid;
+        cursor: pointer;
+        font-size: 10rem;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+      }
+      .topBorder {
+        border-top-color: black;
+      }
+      .rightBorder {
+        border-right-color: black;
+      }
+      .leftBorder {
+        border-left-color: black;
+      }
+      .bottomBorder {
+        border-bottom-color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="row">
+      <div class="square rightBorder bottomBorder ok one"></div>
+      <div class="square leftBorder bottomBorder rightBorder ok two"></div>
+      <div class="square leftBorder bottomBorder ok three"></div>
+    </div>
+    <div class="row">
+      <div class="square bottomBorder topBorder rightBorder ok four"></div>
+      <div class="square bottomBorder topBorder rightBorder leftBorder ok five"></div>
+      <div class="square bottomBorder topBorder leftBorder ok six"></div>
+    </div>
+    <div class="row">
+      <div class="square topBorder rightBorder ok seven"></div>
+      <div class="square topBorder rightBorder leftBorder ok eight"></div>
+      <div class="square topBorder leftBorder ok nine"></div>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
